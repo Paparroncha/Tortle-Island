@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #fff4d0;
+  background: radial-gradient(circle at top, #245b3b, #10251d 55%, #07110d);
+}
+
+a {
+  color: inherit;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 24px;
+  background:
+    linear-gradient(90deg, rgba(7,17,13,0.92), rgba(7,17,13,0.35)),
+    radial-gradient(circle at 70% 20%, #4fd16b, transparent 30%),
+    linear-gradient(135deg, #173b2a, #07110d);
+}
+
+.topbar {
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+  font-weight: 700;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #ffd45c;
+}
+
+.hero-content {
+  max-width: 1180px;
+  min-height: calc(100vh - 90px);
+  margin: auto;
+  display: grid;
+  align-content: center;
+}
+
+.hero-content h1 {
+  max-width: 850px;
+  font-size: clamp(3rem, 7vw, 6.8rem);
+  line-height: 0.88;
+  margin: 18px 0;
+  letter-spacing: -0.06em;
+  text-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  max-width: 680px;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.badge {
+  display: inline-block;
+  width: fit-content;
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #122314;
+  background: linear-gradient(135deg, #ffd45c, #4fd16b);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.cta-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 900;
+  box-shadow: 0 12px 26px rgba(0,0,0,0.28);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+}
+
+.primary {
+  background: linear-gradient(135deg, #4fd16b, #a7ff65);
+  color: #10251d;
+}
+
+.secondary {
+  background: rgba(255,255,255,0.16);
+  border: 2px solid rgba(255,255,255,0.28);
+  color: white;
+}
+
+.small-note {
+  max-width: 620px;
+  margin-top: 14px;
+  font-size: 0.95rem;
+  opacity: 0.82;
+}
+
+.section {
+  max-width: 1180px;
+  margin: auto;
+  padding: 88px 24px;
+}
+
+.section.dark {
+  max-width: none;
+  padding-left: max(24px, calc((100vw - 1180px) / 2 + 24px));
+  padding-right: max(24px, calc((100vw - 1180px) / 2 + 24px));
+  background: rgba(0,0,0,0.28);
+}
+
+.section h2 {
+  font-size: clamp(2.1rem, 4vw, 4rem);
+  line-height: 1;
+  margin: 14px 0 34px;
+  letter-spacing: -0.04em;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.panel,
+.feature,
+.credits,
+.controls {
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.92);
+  color: #10251d;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.28);
+}
+
+.feature span {
+  font-size: 3rem;
+}
+
+.panel h3,
+.feature h3,
+.credits h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+.panel p,
+.feature p,
+.credits p {
+  line-height: 1.65;
+  font-size: 1.08rem;
+}
+
+.controls {
+  display: grid;
+  gap: 14px;
+}
+
+.controls div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+kbd {
+  min-width: 44px;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #1d2e25;
+  color: white;
+  font-weight: 900;
+}
+
+.credits {
+  text-align: center;
+}
+
+.credits h3 {
+  font-size: clamp(2rem, 4vw, 4.2rem);
+  margin: 10px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 28px max(24px, calc((100vw - 1180px) / 2 + 24px));
+  color: rgba(255,255,255,0.8);
+  background: #07110d;
+}
+
+footer a {
+  color: #ffd45c;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+  .links {
+    display: none;
+  }
+
+  .two,
+  .three {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 18px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
