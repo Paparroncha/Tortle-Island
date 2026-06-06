@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tortle Island — Salva el bosque</title>
+  <meta name="description" content="Tortle Island es una aventura de plataformas 2D para aprender, modificar y explorar cómo se construyen los videojuegos.">
+  <meta property="og:title" content="Tortle Island">
+  <meta property="og:description" content="Un juego de plataformas 2D para jugar, aprender y modificar.">
+  <meta property="og:image" content="images/promo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">
+        <span class="logo">🐢</span>
+        <span>Tortle Island</span>
+      </div>
+
+      <div class="links">
+        <a href="#descargar">Descargar</a>
+        <a href="#historia">Juego</a>
+        <a href="#programacion">Aprender</a>
+        <a href="#capturas">Imágenes</a>
+        <a href="#controles">Controles</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div>
+        <p class="badge">Juego de plataformas 2D</p>
+        <h1>Salta, recoge hojas y salva el bosque.</h1>
+
+        <p class="subtitle">
+          Ayuda a Tortle a superar 10 niveles con abejas asesinas, osos esqueleto,
+          arqueros, cocodrilos de fuego y una planta carnívora final.
+        </p>
+
+        <div class="cta-row" id="descargar">
+          <a class="button primary" href="https://github.com/Paparroncha/Tortle-Island/releases/latest">
+            Descargar para Windows
+          </a>
+
+          <a class="button secondary" href="#programacion">
+            Aprender modificando
+          </a>
+        </div>
+
+        <p class="small-note">
+          El botón apunta a la última Release de GitHub. Si aparece “Not Found”, primero hay que crear una Release
+          y subir el ZIP del juego.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/portada.png" alt="Portada de Tortle Island">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="historia">
+      <p class="badge">La aventura</p>
+      <h2>El bosque necesita a Tortle</h2>
+
+      <div class="grid two">
+        <article class="panel">
+          <h3>Objetivo</h3>
+          <p>
+            Completa los 10 niveles y termina con el máximo número de hojas posible.
+            Cada hoja cuenta: usar la concha o morir reduce la puntuación final.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h3>Riesgo y estrategia</h3>
+          <p>
+            La concha protege, pero cuesta hojas. La turboconcha derrota enemigos,
+            pero consume hojas muy rápido. El reto está en decidir cuándo usarla.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dark" id="programacion">
+      <p class="badge">Escuela de programación de juegos</p>
+      <h2>Un juego para aprender cómo se construyen los videojuegos</h2>
+
+      <div class="grid two">
+        <div>
+          <p>
+            Tortle Island es una creación básica que puede ser utilizada por creadores nóveles,
+            niños y familias para explorar e interpretar la arquitectura de un videojuego:
+            menús, niveles, personajes, enemigos, música, puntuación, ranking y pantalla final.
+          </p>
+
+          <p>
+            El proyecto también sirve para practicar modificando el juego. Los personajes y elementos visuales
+            pueden cambiarse editando los archivos de imagen con Pixel Art, Paint, Piskel, GIMP o cualquier editor
+            sencillo. Basta con conservar los nombres de archivo y reemplazar las imágenes dentro de sus carpetas.
+          </p>
+
+          <div class="folder-list">
+            <div><code>assets/player/</code><span>Sprites de Tortle.</span></div>
+            <div><code>assets/enemies/</code><span>Enemigos como abejas y osos esqueleto.</span></div>
+            <div><code>assets/world/</code><span>Suelo, hojas y elementos del mundo.</span></div>
+            <div><code>assets/menu/</code><span>Portada, Game Over e imágenes de menú.</span></div>
+            <div><code>assets/audio/</code><span>Música y efectos de sonido.</span></div>
+          </div>
+        </div>
+
+        <div class="image-stack">
+          <img src="images/screenshot.png" alt="Pantallazo del juego Tortle Island">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="capturas">
+      <p class="badge">Imágenes</p>
+      <h2>Portada, promo y pantallazo</h2>
+
+      <div class="gallery">
+        <figure>
+          <img src="images/portada.png" alt="Portada de Tortle Island">
+          <figcaption>Portada del juego</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/promo.png" alt="Imagen promocional de Tortle Island">
+          <figcaption>Imagen promocional</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/screenshot.png" alt="Pantallazo de Tortle Island">
+          <figcaption>Pantallazo jugable</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <p class="badge">Enemigos</p>
+      <h2>Una isla llena de peligros</h2>
+
+      <div class="grid three">
+        <article class="feature">
+          <span>🐝</span>
+          <h3>Abejas asesinas</h3>
+          <p>Vuelan cada vez más rápido a medida que avanzan los niveles.</p>
+        </article>
+
+        <article class="feature">
+          <span>🏹</span>
+          <h3>Esqueletos arqueros</h3>
+          <p>Desde el nivel 5 disparan flechas contra Tortle.</p>
+        </article>
+
+        <article class="feature">
+          <span>🌱</span>
+          <h3>Boss final</h3>
+          <p>En el nivel 10 aparece una planta carnívora que dispara hielo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="controles">
+      <p class="badge">Cómo jugar</p>
+      <h2>Controles</h2>
+
+      <div class="controls">
+        <div><kbd>A</kbd><kbd>D</kbd><span>Mover a Tortle</span></div>
+        <div><kbd>ESPACIO</kbd><span>Saltar</span></div>
+        <div><kbd>K</kbd><span>Concha protectora — cuesta 1 hoja por segundo</span></div>
+        <div><kbd>L</kbd><span>Turboconcha — cuesta 1 hoja cada 0,25 segundos</span></div>
+        <div><kbd>R</kbd><span>Reiniciar nivel</span></div>
+        <div><kbd>ESC</kbd><span>Volver al menú</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Tortle Island</p>
+    <a href="#descargar">Descargar el juego</a>
+  </footer>
+</body>
+</html>
