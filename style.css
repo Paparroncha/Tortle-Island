@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tortle Island — Salva el bosque</title>
+  <meta name="description" content="Tortle Island es una aventura de plataformas 2D donde una tortuga recoge hojas, esquiva monstruos y salva el bosque.">
+  <meta property="og:title" content="Tortle Island">
+  <meta property="og:description" content="Recoge hojas, usa la concha con cuidado y salva el bosque.">
+  <meta property="og:image" content="images/promo.png">
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand"><img src="images/icon.png" alt="Icono"><span>Tortle Island</span></div>
+      <div class="links"><a href="#descargar">Descargar</a><a href="#historia">Historia</a><a href="#controles">Controles</a><a href="#creditos">Créditos</a></div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="badge">Juego de plataformas 2D</p>
+        <h1>Salta, recoge hojas y salva el bosque.</h1>
+        <p class="subtitle">Ayuda a Tortle a superar 10 niveles llenos de abejas asesinas, osos esqueleto, arqueros, cocodrilos de fuego y una planta carnívora final.</p>
+        <div class="cta-row" id="descargar">
+          <a class="button primary" href="downloads/TortleIsland-Windows.zip" download>Descargar para Windows</a>
+          <a class="button secondary" href="#capturas">Ver capturas</a>
+        </div>
+        <p class="small-note">Si el botón no descarga, falta subir <strong>TortleIsland-Windows.zip</strong> a <code>downloads/</code> o cambiar el enlace por una Release de GitHub.</p>
+      </div>
+      <div class="hero-card"><img src="images/cover.png" alt="Portada de Tortle Island"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="historia">
+      <div class="section-title"><p class="badge">La aventura</p><h2>El bosque necesita a Tortle</h2></div>
+      <div class="grid two">
+        <div class="panel"><h3>Objetivo</h3><p>Completa los 10 niveles y termina con el máximo número de hojas posible. Cada hoja cuenta: usar la concha o morir reduce tu puntuación final.</p></div>
+        <div class="panel"><h3>Riesgo y estrategia</h3><p>La concha protege, pero cuesta hojas. La turboconcha derrota enemigos, pero consume hojas muy rápido.</p></div>
+      </div>
+    </section>
+
+    <section class="section dark" id="capturas">
+      <div class="section-title"><p class="badge">Promoción</p><h2>Una isla llena de peligros</h2></div>
+      <img class="wide-img" src="images/promo.png" alt="Imagen promocional">
+    </section>
+
+    <section class="section">
+      <div class="grid three">
+        <div class="feature"><span class="emoji">🍃</span><h3>Recoge hojas</h3><p>Las hojas son tu puntuación y también tu energía para usar habilidades.</p></div>
+        <div class="feature"><span class="emoji">🐢</span><h3>Usa la concha</h3><p>Protégete de enemigos y proyectiles, pero no malgastes hojas.</p></div>
+        <div class="feature"><span class="emoji">🌲</span><h3>Salva el bosque</h3><p>Al terminar la aventura, Tortle libera a los animales del bosque.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="controles">
+      <div class="section-title"><p class="badge">Cómo jugar</p><h2>Controles</h2></div>
+      <div class="controls">
+        <div><kbd>A</kbd><kbd>D</kbd><span>Mover a Tortle</span></div>
+        <div><kbd>ESPACIO</kbd><span>Saltar</span></div>
+        <div><kbd>K</kbd><span>Concha protectora — cuesta 1 hoja por segundo</span></div>
+        <div><kbd>L</kbd><span>Turboconcha — cuesta 1 hoja cada 0,25 segundos</span></div>
+        <div><kbd>R</kbd><span>Reiniciar nivel</span></div>
+        <div><kbd>ESC</kbd><span>Volver al menú</span></div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="grid two">
+        <div><p class="badge">Game Over</p><h2>Cuando las hojas se acaban...</h2><p>Si Tortle pierde demasiadas hojas, aparece Game Over. Cada muerte resta 10 hojas.</p></div>
+        <img class="rounded-img" src="images/gameover.png" alt="Game Over">
+      </div>
+    </section>
+
+    <section class="section" id="creditos">
+      <div class="section-title"><p class="badge">Créditos</p><h2>Creadores</h2></div>
+      <div class="credits"><p>Un juego creado por:</p><h3>Marco Pollito y Papa Roncha</h3><p>Con tortugas, hojas, abejas asesinas, osos esqueleto y una planta carnívora final.</p></div>
+    </section>
+  </main>
+  <footer><p>© Tortle Island — Marco Pollito y Papa Roncha</p><a href="#descargar">Descargar el juego</a></footer>
+</body>
+</html>
