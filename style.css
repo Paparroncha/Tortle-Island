@@ -328,4 +328,10 @@ footer a {
   footer {
     flex-direction: column;
   }
+
+  .footer-creators {
+  margin-top: 4px;
+  color: rgba(255,255,255,0.95);
+  font-weight: 800;
+}
 }
